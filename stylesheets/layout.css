@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+/* 
+body {
+  width: 100vw;
+  min-height: 100vw;
+  font-family: "Unbounded";
+  overflow: clip visible;
+  position: relative;
+  background: #ffffff;
+} */
+
+body {
+  width: 100vw;
+  min-height: 100vw;
+  margin: 0;
+  font-family: "Unbounded";
+  position: relative;
+  overflow-x: hidden; /* защита от вылетов */
+  background-color: #ffffff;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5270px;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: top center;
+  opacity: 0.2;
+}
+
+.section-1 {
+  position: relative;
+  overflow: hidden;
+  height: 63vw;
+  background-image: url("../images/background.svg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+.section-1 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  position: relative;
+  margin-top: 8.7vw;
+  left: 1vw;
+  width: 64vw;
+  height: auto;
+}
+
+.stone {
+  position: absolute;
+  height: auto;
+}
+
+.stone-1 {
+  width: 36vw;
+  bottom: 38vw;
+  left: -12vw;
+}
+
+.stone-2 {
+  width: 39vw;
+  /* bottom: 5.4vw;
+  left: 8vw; */
+}
+
+.stone-3 {
+  width: 40vw;
+  /* bottom: 13vw;
+  right: 8vw; */
+}
+
+.stone-4 {
+  width: 17vw;
+  /* bottom: 13vw;
+  left: 4vw; */
+}
+
+.stone-5 {
+  width: 53vw;
+  bottom: 25vw;
+  right: 10vw;
+}
+
+/* .bird {
+  position: relative;
+  height: 294px;
+  width: 245px;
+  top: 15px;
+  left: 82px;
+} */
+
+/* .stone-1 {
+  left: 5vw;
+}
+
+.stone-2 {
+  right: 8vw;
+}
+
+.stone-3 {
+  left: 40vw;
+}
+
+.stone-4 {
+  right: 8vw;
+}
+
+.stone-5 {
+  right: 8vw;
+} */
